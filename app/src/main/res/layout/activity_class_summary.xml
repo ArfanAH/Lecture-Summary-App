@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassSummaryActivity"
+    android:orientation="vertical"
+    android:background="#ffbb00"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Class Summary"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_margin="4dp">
+        <TableRow>
+            <TextView
+                android:text="Name"
+                android:textSize="16sp"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                />
+            <TextView
+
+                android:text="Md. Arfan Ahmed"
+                android:textSize="16sp"
+                android:id="@+id/name"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="ID"
+                android:textSize="16sp"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                />
+            <TextView
+                android:text="2020-1-60-139"
+                android:textSize="16sp"
+                android:id="@+id/id"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+
+                android:text="Course"
+                android:textSize="16sp"
+                android:layout_height="match_parent"
+                android:paddingTop="12dp"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_height="match_parent"
+                android:paddingTop="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/radiogrp1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radiobtn1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CSE477"/>
+                    <RadioButton
+                        android:id="@+id/radiobtn2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CSE479"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:id="@+id/radiobtn3"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CSE489"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:id="@+id/radiobtn4"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CSE495"/>
+                </LinearLayout>
+
+
+            </RadioGroup>
+
+
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+
+                android:text="Type"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioGroup
+                android:id="@+id/radiogrp2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+
+                <RadioButton
+                    android:id="@+id/radiobtntype1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Theory"/>
+                <RadioButton
+                    android:id="@+id/radiobtntype2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lab"/>
+
+
+
+
+            </RadioGroup>
+
+
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+
+                android:text="Date"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="16sp"
+
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+
+                android:text="Lecture"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/lectureNum"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="16sp"
+                android:inputType="numberSigned"
+                android:hint="Enter Lecture Number"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+
+                android:text="Topic"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text=":"
+                android:textSize="16sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/topic"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="16sp"
+
+                android:hint="Enter Topic Title"/>
+        </TableRow>
+
+        <TextView
+
+            android:text="Summary of the Lecture"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#888888"
+            >
+            <EditText
+                android:id="@+id/summary"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text=""
+                android:background="#ffffff"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_margin="2dp"
+                android:inputType="textCapWords|textMultiLine"
+                android:hint="Enter the keywords or phrases discussed in the class.
+                     Each keyword or phrases must  be separeted by comma(,)"/>
+
+        </FrameLayout>
+
+
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:backgroundTint="#ffbb00"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#ffbb00"
+            android:text="Save"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

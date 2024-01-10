@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8E8E8">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/courseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/courseCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CourseCode: (Type-ClassNumber)"
+                android:textSize="15sp"
+                android:paddingBottom="10dp"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/courseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun 03 Dec, 2023"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/courseTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic here"
+            android:textSize="15sp"
+            android:layout_below="@+id/courseInfo"/>
+    </RelativeLayout>
+</LinearLayout>
